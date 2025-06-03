@@ -8,7 +8,7 @@ This project converts natural language questions into SQL queries using a Large 
 
 - 🔗 Integration with Groq's LLM (`gemma2-9b-it`)
 - 🤖 Natural language → SQL query generation
-- 🗃️ Executes queries against MySQL database (`employees`, `departments`)
+- 🗃️ Executes queries against MySQL database (`employees`, `salaries`,`departments`)
 - 📄 Extracts and cleans SQL query from LLM response
 - 🧠 Generates human-like answers from SQL results
 - ⚙️ Modular and easy to adapt for other databases or LLMs
@@ -38,8 +38,8 @@ nlp-to-sql-qna/
 🔧 Setup Instructions
 
 1. Clone the Repo:
-   git clone https://github.com/yourusername/nlp-to-sql-qna.git  
-   cd nlp-to-sql-qna
+   git clone https://github.com/gauri-111/NLP-to-SQL-QnA.git
+   cd NLP-to-SQL-QnA
 
 2. Create Virtual Environment:
    python -m venv venv  
@@ -84,19 +84,6 @@ Final Answer:
 📌 Notes
 
 - Requires MySQL running locally (`mysql+pymysql://root:@localhost/x`)  
-- `employees` and `departments` tables must exist in the database  
+- `employees` , `salaries` and `departments` tables must exist in the database  
 - Uses `gemma2-9b-it` model via Groq API (temperature = 0)
 
-------------------------------------------------------------
-
-🔐 License
-
-This project is licensed under the MIT License.
-
-------------------------------------------------------------
-
-👤 Author
-
-Your Name  
-GitHub: https://github.com/yourusername  
-LinkedIn: https://linkedin.com/in/yourlinkedin
